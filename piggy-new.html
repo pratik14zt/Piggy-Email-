@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .email-container {
+            width: 90% !important;
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        .content {
+            text-align: center;
+        }
+        .button {
+            display: block;
+            width: 80%;
+            max-width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background: #000;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .market-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .market-table th, .market-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            margin-top: 20px;
+        }
+        @media (max-width: 480px) {
+            .email-container {
+                padding: 15px;
+            }
+            .button {
+                width: 100%;
+                padding: 12px;
+            }
+            .market-table th, .market-table td {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <img src="https://i.ibb.co/7tg5vtgX/Group-2.png" alt="Piggy Mail Logo">
+        </div>
+        <div class="content">
+            <h2>Market Summary</h2>
+            <table class="market-table">
+                <tr>
+                    <th>Index</th>
+                    <th>Value</th>
+                    <th>Change</th>
+                </tr>
+                <tr>
+                    <td>NEPSE</td>
+                    <td>2,345.67</td>
+                    <td>+12.34</td>
+                </tr>
+                <tr>
+                    <td>SenseInd</td>
+                    <td>48,765.23</td>
+                    <td>-98.76</td>
+                </tr>
+            </table>
+            <a href="#" class="button">View Details</a>
+        </div>
+        <div class="footer">
+            &copy; 2025 Piggy Mail. All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>

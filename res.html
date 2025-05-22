@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Responsive Email</title>
+    <style>
+        /* Default styles (desktop-first) */
+        body, table, td, a {
+            font-family: Arial, sans-serif;
+        }
+
+        .email-container {
+            width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .email-header {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #ffffff;
+            font-size: 24px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .email-content {
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #007BFF;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .email-footer {
+            text-align: center;
+            font-size: 14px;
+            color: #666666;
+            padding: 20px;
+        }
+
+        /* Mobile Styles */
+        @media screen and (max-width: 480px) {
+            .email-container {
+                width: 480px !important;
+                padding: 10px !important;
+            }
+
+            .email-header {
+                font-size: 20px !important;
+            }
+
+            .email-content {
+                font-size: 14px !important;
+                padding: 15px !important;
+            }
+
+            .button {
+                width: 100% !important;
+                text-align: center !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin:0; padding:0; background-color:#F4F4F4;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#F4F4F4">
+        <tr>
+            <td align="center">
+                <table role="presentation" class="email-container">
+                    <!-- Header -->
+                    <tr>
+                        <td class="email-header">Welcome to Our Service!</td>
+                    </tr>
+
+                    <!-- Content -->
+                    <tr>
+                        <td class="email-content">
+                            <p>Hi there,</p>
+                            <p>Thank you for signing up! We're excited to have you onboard. Click below to get started:</p>
+                            <p style="text-align: center;">
+                                <a href="#" class="button">Get Started</a>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td class="email-footer">
+                            &copy; 2025 Your Company. All rights reserved.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

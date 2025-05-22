@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Piggy Mail</title>
+
+    <style>
+        .email-container {
+            background: #000;
+            width: 580px;
+            margin: 0 auto;
+            padding: 0;
+            color: #EDEADE;
+        }
+        @media screen and (max-width:600px) {
+            .email-container{
+                width:100%;
+            }
+        }
+
+        .nav {
+
+            height: 162px;
+            color: #ffffff;
+            padding: 10px;
+            box-sizing: border-box;
+
+
+        }
+
+        .h1 {
+            font-size: 33px;
+            letter-spacing: 4px;
+            margin: 0;
+            line-height: 44px;
+            text-align: center;
+        }
+
+        .p1 {
+            font-size: 13px;
+            letter-spacing: 1.4px;
+            margin: 0;
+            line-height: 15px;
+            text-align: center;
+        }
+
+        .h2 {
+            text-align: center;
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        .p2 {
+            text-align: left;
+            font-size: 17px;
+            line-height: 20px;
+        }
+
+        .p3 {
+            font-size: 13px;
+            font-style: normal;
+            margin-top: 0;
+            margin-bottom: 13px;
+            line-height: 20px;
+            letter-spacing: 4px;
+            text-align: center;
+        }
+
+        .section {
+            color: #000;
+            background-color:  #EDEADE;
+            height: 450px;
+            padding: 0px 45px;
+           
+            border-bottom: solid 6px #DB8008;
+        }
+
+        .table1 {
+            font-size: 13px;
+            line-height: 20px;
+            font-style: normal;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .index {
+
+            color: #ffffff;
+            height: 172px;
+            box-sizing: border-box;
+        }
+
+        
+        img{max-width:100%}
+
+        
+        .logo{
+            margin: -15px auto; 
+            display: block;
+        }
+
+        .button {
+            background: #000;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 11px 21px;
+            text-decoration: none;
+            border-radius: 20px;
+            margin:0 auto;
+            display:table;
+        }
+
+        .market {
+            height: 1170px;
+            padding: 50px;
+            box-sizing: border-box;
+
+        }
+
+        .p4 {
+            font-size: 22px;
+            margin-top: 5px;
+        }
+
+        .p5 {
+            line-height: 20px;
+            text-align: left;
+        }
+
+        .p6 {
+            font-size: 22px;
+
+        }
+
+        .p7 {
+            line-height: 20px;
+            margin-bottom: 50px;
+            text-align: left;
+        }
+
+        .p8 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .p9 {
+            line-height: 20px;
+            text-align: left;
+        }
+
+        
+
+        .emoji{
+            margin:0 auto;
+            display: block;
+        }
+        .p10 {
+            line-height: 20px;
+            margin-top: 50px;
+        }
+
+        
+
+        .footer {
+            color: #484848;
+        }
+
+
+
+        @media screen and (max-width: 600px) {
+           
+            .nav {
+
+                
+                padding: 5px;
+               
+
+
+            }
+            .button{ 
+                font-size: 12px;
+            }
+            .h1 {
+                font-size: 30px ;
+                letter-spacing: 2px;
+                margin: 0;
+                line-height: 30px;
+               
+            }
+
+            .p1 {
+                font-size: 11px;
+                letter-spacing: 1.4px;
+                
+                line-height: 14px;
+            }
+
+            .h2 {
+               
+                font-size: 22px;
+                
+            }
+
+            .p2 {
+                text-align: left;
+                font-size: 15px ;
+                line-height: 16px;
+            }
+
+            .p3 {
+                font-size: 14px;
+                font-style: normal;
+                margin-top: 20px;
+                margin-bottom: 13px;
+                line-height: 17px;
+                letter-spacing: 4px;
+                text-align: center;
+            }
+
+            .section {
+                
+                height:500px;
+                padding: 0px 25px;
+                
+                border-bottom: solid 9px #DB8008;
+            }
+
+            .table1 {
+                font-size: 14px ;
+               
+            }
+
+            .index {
+
+               
+                height: 172px ;
+               
+            }
+
+            .market {
+                
+                padding: 25px ;
+               
+            }
+
+            .p4 {
+                font-size: 22px ;
+              
+            }
+
+            .p5 {
+                line-height: 17px;
+                text-align: left;
+            }
+
+            .p6 {
+                font-size: 23px;
+
+            }
+
+            .p7 {
+                line-height: 15px;
+                margin-bottom: 30px;
+               
+            }
+
+            .p8 {
+                font-size: 22px;
+               
+            }
+
+            .p9 {
+                line-height: 17px ;
+                text-align: left;
+            }
+
+            .p10 {
+                line-height: 15px;
+                margin-top: 30px ;
+            }
+
+            .logo{
+                margin: -9px auto; 
+            }
+
+           
+            
+
+
+        }
+    </style>
+</head>
+
+<body style="padding:0;margin:0; box-sizing: border-box;background:#36454F;font-family:Arial, syncopate;">
+    <!-- email container-->
+
+    <!-- <table border="0" width="100%" cellspacing="0"  cellpadding="0"> -->
+    <table class="email-container" border="0" width="100%" cellspacing="0" cellpadding="0" style="margin: 0 auto; ">
+
+        <!-- nav bar-->
+        <!-- <tr>
+            <td class="nav" >
+                <img src="https://i.ibb.co/7tg5vtgX/Group 2.png" alt="Piggy logo" style="margin:0 0 -15px 14em; " >
+                <h1 style=" font-size: 33px;;letter-spacing: 4px; margin:0 ;line-height: 44px; text-align: center; "><b>BREAKFAST NEWS</b></h1>
+                <p style=" font-size: 13px; letter-spacing: 1.4px; margin:0 ;line-height: 14px;text-align: center;">TOP NEWS TO START YOUR DAY WITH</p>
+
+            </td> 
+        </tr> -->
+
+
+        <!-- new code-block for making Piggy logo in center -->
+        <tr>
+            <td class="nav" style="text-align: center;">
+                <img class="logo"src="https://ibb.co/tjjqmwB/Group 2.png" alt="Piggy logo"
+                    >
+                <h1 class="h1">
+                    <b>BREAKFAST NEWS</b>
+                </h1>
+                <p class="p1">
+                    TOP NEWS TO START YOUR DAY WITH
+                </p>
+            </td>
+        </tr>
+
+
+
+        <!-- description Section -->
+        <tr>
+            <td class="section">
+                
+                <h2 class="h2">Want to Receive Free Daily Insights?</h2>
+                <p class="p2">We get it — the stock market moves fast, and it can be hard to keep up.That's why we
+                    created Breakfast News, your daily dose of expert market analysis and PGGY fun,
+                    delivered straight to your inbox every morning.
+                <p class="p2">Consider this a sneak peek at the kind of insights and updates you can expect, and
+                   what thousands of investors rely on every morning to stay ahead of the market.</p>
+                <p class="p2"> And the best part? It's completely free to receive every market day.</p>
+                <p class="p2">The only catch? Today's email is just a preview; you have to opt in by clicking the
+                    button below to get these insights delivered daily — so you're always prepared before the market
+                    opens.</p>
+                <a href="#" class="button">Send me daily news for free!</a>
+            </td>
+        </tr>
+        <!-- description Section -->
+
+        <!-- index section-->
+        <tr>
+            <td class="index">
+
+                <p class="p3">JANUARY 24, 2025</p>
+
+                <table class="table1">
+                    <tr>
+                        <td colspan="2"><b>Thursday's Markets</b></td>
+                    </tr>
+                    <tr>
+                        <td>NEPSE 2,746.92 <span style="color:#04FF00;">(+0.23%)</span></td>
+                        <td>SenseInd 459.69<span style="color:#FF0000;"> (-0.05%) </span></td>
+                    </tr>
+                    <tr>
+                        <td> FloatIndex 186.12 <span style="color:#04FF00;">(+0.10%)</span> </td>
+                        <td> MutualIndex 20.15 <span style="color:#FF0000;">(-0.53%)</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Advanced :<span style="color:#04FF00;"> 101</span> / Decline : <span
+                                style="color:#FF0000;">134</span> / Unchanged:8</td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <!-- index section-->
+
+        <!-- image section-->
+        <tr>
+            <td class="img">
+                <img src="https://ibb.co/tpQGPZZz/index.png" alt="index">
+
+            </td>
+
+        </tr>
+        <!-- image section-->
+        <!-- market description-->
+        <tr>
+            <td class="market">
+                <table>
+                    <tr>
+                        <td>
+                            <p class="p4"><b>1.Market Highlights</b></p>
+                            <p class="p5">The Nepal Stock Exchange (NEPSE) has demonstrated a positive trend in recent
+                                sessions. On February 17, 2025, the NEPSE index rose by 29.87 points (1.10%) to
+                                close at 2,727.91, with a total turnover of Rs. 10.04 billion. The following day,
+                                February 18, 2025, the index continued its upward trajectory, gaining 11.91 points
+                                (0.43%) to settle at 2,739.82, and a turnover of Rs. 10.43 billion.
+                            <ul>
+                                <li>“It's really the perfect setup for Netflix": Geetha Ranganathan, a senior analyst
+                                    at Bloomberg, flagged the content lineup from the quarter as a key driver for
+                                    likely higher subscriber retention, along with new additions.
+                                </li>
+                                <li>Ad revenue contribution small, but growing: Investors should watch out for signs
+                                    of advertising growth, with the ad tier now having over 70 million global monthly
+                                    active users. The company plans to launch its first-party ad server across
+                                    all markets in 2025.
+                                </li>
+                            </ul>
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="p6"><b>2.Top Performers</b></p>
+                            <p class="p5">Himalayan Reinsurance Limited (HRL) led the market in turnover on February 18,
+                                2025, with transactions amounting to Rs. 820.2 million, closing at Rs. 936 per
+                                share. Notably, four scrips achieved a 10% increase, hitting their upper circuit
+                                limits.</p>
+
+
+                            <p class="p6"><b>3.Sector Overview</b></p>
+                            <p class="p5">The 'Others' sector experienced the most significant gain, advancing by 2.47%,
+                                while the 'Trading' sector faced a decline of 1.27%.</p>
+
+
+                            <p class="p6"><b>4.Investor Insights</b></p>
+                            <p class="p5">Despite the overall positive market movement, investors are advised to
+                                exercise
+                                caution. Recent reports highlight that over 26% of companies listed on NEPSE are
+                                loss-making, yet their share prices remain disproportionately high due to potential
+                                market manipulation. This underscores the importance of thorough research and
+                                due diligence before making investment decisions.
+                            </p>
+
+
+                            <p class="p6"><b>5.Upcoming Events</b></p>
+                            <p class="p7">Upper Hewakhola Hydropower Company has proposed issuing 100% right
+                                shares, pending approval from the Electricity Regulatory Commission.
+                                Additionally, Crest Micro Life Insurance Limited is set to issue 1,845,000 units of
+                                IPO shares to the general public from February 22 to 26, 2025.
+                            </p>
+
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>
+                            <p class="p8"><b>See You Tomorrow?</b></p>
+                            <p class="p9">You can start your day ahead of the game with the market's top stories and key
+                                investing insights by subscribing to the Fool's Breakfast News email. Just click below
+                                — it's free!
+                            </p>
+
+                        </td>
+
+                    </tr>
+                    <!-- market description-->
+
+                    <!--feedback section-->
+                    <tr>
+                        <td>
+                            <p class="p8"><b>How did you like this email?</b></p>
+                            <img class="emoji"  src="https://ibb.co/xK8yCJc8/emoji.png" alt="feed backs" >
+                        </td>
+                    </tr>
+                        <!--feedback section-->
+
+
+
+                        <!-- footer-->
+                    <tr>
+                        <td class="footer">
+                            <p class="p10">If you have any questions, <a
+                                    href="https://support.fool.com/hc/en-us?lid=nrsvutxvpl7o"
+                                    style="color:#484848">check out our Help Center here.</a>
+                                PGGY, its directors, employees, contractors or staff may own positions in the
+                                companies mentioned in this email. For more details, please see our <a
+                                    href="https://www.fool.com/legal/fool-disclosure-policy/"
+                                    style="color: #484848;">disclosure policy.</a> </p>
+
+
+                            <P class="p9">PGGY
+                                18 Bhaisepati Hills, Thapa Gaun<br>
+                                Lalitpur, Nepal<br>
+                                <a href="https://05.emailinboundprocessing.com/preference_center/v1/eyJhbGciOiJSUzI1NiJ9/eyJzdWIiOiJwY3YxIiwiaWF0IjoxNzM3NDcwMTc5LCJleHAiOjE3NjkwMDYxNzksImQiOiIkMCREV2RFUE53NmxzV0hMVlR4OEUrcXVnPT0kYi9qQ3luMkRxT24vK3BFSjBPYTc4cTJScFQ4L25KZTRJNlR0R1dTc3J3VGIvWVllK09sem5FMEc5aElOXG5ua1k5IiwiaCI6IjA1LmVtYWlsaW5ib3VuZHByb2Nlc3NpbmcuY29tIiwiYyI6IjIwMDg4IiwibSI6IjY3OGZhMTJjZDIyODA2MDA2NTI3MmM5NyJ9/V9D97SwD9fFobKws5SO5vrdSDnFuBx8bZQ0ShoFOSUDBRiI9HuVrYLeTYKZvONPQViMjibfykgCRwHhyE3M4OxaX2JVxuNc4U-YdVDO9m02wIxi80zYy8hKIp1DhhZDm5qQvRz7_5ttmEtQ2Ntf9457bOAJc02igVwyGPFlg1a32Zw5MDC2DWpVnkEp_z9Tsj82y5_r_xhdAtjceq4-AI79mTGMJdFkSBFLZ6sUPl6Qrd13V8SdjbcVDu_mkxHzzZny0006OGYvNedgL4hThenqgQUbUn6mrQyhh5NybAsWmNsqvEaCQW8eF7yQNku12bWuISZ_xV9uzzuULOIIe5g"
+                                    style="color: #484848;">Manage your email settings.</a> <br>
+                                Copyright 2025 PGGY. All rights reserved.
+                            </P>
+
+                        </td>
+                    </tr>
+                    <!-- footer-->
+                </table>
+
+            </td>
+        </tr>
+
+    </table>
+
+    <!-- </div> -->
+
+
+</body>
